@@ -1,0 +1,21 @@
+class Solution
+{
+	public:
+		string is_palindrome(int n)
+		{
+		    // Code here.
+		    int rev = 0;
+		    int x = n;
+		    while(x!=0)
+		    {
+		        int rem = x%10;
+		        rev = (rev*10)+rem;
+		        x=x/10;
+		    }		    
+		    if(rev==n)
+		        return "Yes";
+		    else
+		        return "No";
+		    
+		}
+};
